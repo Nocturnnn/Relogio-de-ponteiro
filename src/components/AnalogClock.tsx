@@ -59,7 +59,11 @@ export function AnalogClock() {
   return (
     <main className="clock-stage" aria-label="Relogio analogico">
       <div className="clock-orbit" aria-hidden="true" />
-      <div className="clock" role="img" aria-label="Relogio analogico com ponteiros em tempo real">
+      <div
+        className="clock"
+        role="img"
+        aria-label="Relogio analogico com ponteiros em tempo real"
+      >
         <div className="clock__depth" aria-hidden="true" />
         <div className="clock__glass" aria-hidden="true" />
         <div className="clock__inner-ring" aria-hidden="true" />
@@ -74,7 +78,9 @@ export function AnalogClock() {
               ]
                 .filter(Boolean)
                 .join(" ")}
-              style={{ transform: `translateX(-50%) rotate(${marker.angle}deg)` }}
+              style={{
+                transform: `translateX(-50%) rotate(${marker.angle}deg)`,
+              }}
             />
           ))}
         </div>
